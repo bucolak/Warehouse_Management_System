@@ -13,3 +13,5 @@ This project is a C++ application that simulates a basic Warehouse Management Sy
   ./warehouse  </pre>
 
 
+![Uploading Ekran Resmi 2025-05-19 21.40.43.png…]()
+
