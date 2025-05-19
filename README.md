@@ -3,23 +3,12 @@ This project is a C++ application that simulates a basic Warehouse Management Sy
 
 # Features
 - Product and BaseProduct classes
-- User and order management
+- Order management
 - Input validation
 - Menu-based user interface
 - Reporting features via ReportManager
 
-# File Structure
-Warehouse Project/
-├── Warehouse.cpp
-├── Menu.cpp / Menu.h
-├── Product.h / BaseProduct.h
-├── User.h / Order.h
-├── InputValidator.cpp / .h
-├── ReportManager.cpp / .h
-├── Warehouse.h
-
 # 🚀 Build and Run
-g++ *.cpp -o warehouse
-./warehouse
+<pre lang="markdown"> ```bash g++ *.cpp -o warehouse ./warehouse ``` </pre>
 
 
