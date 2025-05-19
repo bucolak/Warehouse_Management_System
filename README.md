@@ -9,6 +9,7 @@ This project is a C++ application that simulates a basic Warehouse Management Sy
 - Reporting features via ReportManager
 
 # 🚀 Build and Run
-<pre lang="markdown"> bash g++ *.cpp -o warehouse ./warehouse  </pre>
+<pre lang="markdown"> g++ *.cpp -o warehouse 
+  ./warehouse  </pre>
 
 
