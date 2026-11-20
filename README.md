@@ -1,15 +1,34 @@
-# Warehouse_Management_System
-This project is a C++ application that simulates a basic Warehouse Management System. It includes core components such as product, user, order, and reporting management.
+# Warehouse Management System
 
-# Features
-- Modular Product Architecture: Designed with Product and BaseProduct classes to support scalability and future extension for new product types, ensuring clean and maintainable object-oriented design.
-- Robust Order Management System: Handles the full lifecycle of customer orders, with clear separation of concerns and efficient data handling mechanisms.
-- Built-in Input Validation Layer: Ensures user inputs are sanitized and validated in real-time, reducing the risk of runtime errors and improving overall system stability.
-- User-Friendly Menu Interface: Terminal-based navigation system provides a structured and intuitive experience, suitable for non-technical users as well as developers.
-- Automated Reporting Engine: Integrated ReportManager generates real-time operational summaries and insights, which can be easily extended to support analytics dashboards or exportable reports.
+A terminal-based **C++** application that simulates a small warehouse: products, stock, users, orders and reports. Written to practise object-oriented design.
 
-# 🚀 Build and Run
-<pre lang="markdown"> g++ *.cpp -o warehouse 
-  ./warehouse  </pre>
+## Features
 
+- **Product management** — add, remove, search and list products
+- **Order management** — create and view orders, with product availability checks
+- **Reports** — `ReportManager` and `analyzeWarehouse` summarise the warehouse state
+- **Input validation** — `InputValidator` rejects invalid menu input and values
+- **Capacity control** — custom exceptions (`WarehouseFullException`, `WarehouseOccupancyWarning`) when the warehouse is full or nearly full
 
+## Design
+
+```
+BaseProduct (abstract: virtual display(), pure virtual calculateTax())
+   └── Product
+Warehouse  ── holds products, checks capacity, throws custom exceptions
+Order      ── order data + static viewOrders()
+User, ReportManager, InputValidator, Menu
+```
+
+OOP concepts used: abstraction, inheritance, polymorphism (virtual functions), encapsulation, custom exception classes and STL containers.
+
+## Build and Run
+
+```bash
+g++ -std=c++17 *.cpp -o warehouse
+./warehouse
+```
+
+## Author
+
+**Buket Çolak** — [github.com/bucolak](https://github.com/bucolak)
